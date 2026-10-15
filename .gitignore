@@ -1,0 +1,57 @@
+# Java / Maven
+target/
+*.jar
+*.war
+*.class
+.mvn/wrapper/maven-wrapper.jar
+
+# Node
+node_modules/
+dist/
+.vite/
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets - .env holds real credentials, never commit it
+.env
+.env.local
+*.pem
+*.key
+secrets/
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Test + coverage output
+coverage/
+htmlcov/
+*.coverage
+test-results/
+playwright-report/
+blob-report/
+allure-results/
+
+# Logs and local volume data
+*.log
+logs/
+data/
+
+# Maven repository created if a containerised build is pointed at the repo root by mistake.
+# Listed because it is easy to do and the result is a multi-gigabyte directory in `git status`.
+.m2/
+
+# Playwright and acceptance-suite output
+e2e/test-results/
+e2e/playwright-report/
